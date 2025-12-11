@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="Proyecto_Elisabeth.css">
+    <link rel="shortcut icon" href="./Fotos-proyecto/contacto.png">
+</head>
+
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <img class="logo-principal" src="./Fotos-proyecto/Logo.png" alt="logo pasteleria">
+            <div class="logo">Pastelería Larios</div>
+            <ul class="nav-links">
+                <li><a href="Proyecto_Elisabeth.html">Inicio</a></li>
+                <li><a href="Productos.html">Productos</a></li>
+                <li><a href="Recetas.html">Recetas</a></li>
+                <li><a href="Eventos.html">Eventos</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Sección de Contacto -->
+    <section class="contacto-conteiner">
+        <h1 class="section-title">¿Quieres sorprender con un postre especial?</h1>
+        <p class="text">
+            En nuestra pastelería creemos que cada dulce cuenta una historia, y nos encanta formar parte de tus
+            celebraciones, antojos y momentos importantes. Si necesitas información sobre nuestros productos, deseas
+            personalizar un pedido o simplemente quieres saber qué delicia recomendamos esta semana, no dudes en ponerte
+            en contacto con nosotros.
+        </p>
+        <br>
+        <ul class="lista-contacto text">
+            <li>📞 Llámanos para atención directa y rápida.</li>
+            <ul>
+                <li>Teléfono: +34 658 838 659</li>
+            </ul>
+            <li>📧 Envíanos un correo electrónico con tus preguntas o solicitudes.</li>
+            <ul>
+                <li>Email: contacto@pastelerialarios.com</li>
+            </ul>
+            <li>🍰 Visítanos en nuestra tienda para conocer de cerca nuestras creaciones y recibir asesoría
+                personalizada.</li>
+            <ul>
+                <li>Horario: Lunes a Viernes, 9:00 - 18:00</li>
+            </ul>
+        </ul>
+        <br>
+        <p class="text">
+            Nuestro equipo está siempre listo para ayudarte a elegir el postre perfecto que hará de tu ocasión algo
+            inolvidable. ¡Esperamos tu mensaje o visita con mucha ilusión!
+        </p>
+    </section>
+    <br>
+    <!-- Información de Contacto -->
+    <section>
+        <h2>¿Qué te parecen nuestros pasteles?</h2>
+        <form class="formulario-opinion">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="pastel">¿Cuál es tu pastel favorito?</label>
+                <input type="text" id="pastel" name="pastel">
+            </div>
+            <div class="form-group">
+                <label for="calificacion">Calificación (1-5 estrellas):</label>
+                <select id="calificacion" name="calificacion" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="5">⭐⭐⭐⭐⭐ Excelente</option>
+                    <option value="4">⭐⭐⭐⭐ Muy bueno</option>
+                    <option value="3">⭐⭐⭐ Bueno</option>
+                    <option value="2">⭐⭐ Regular</option>
+                    <option value="1">⭐ Necesita mejorar</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="opinion">Tu opinión:</label>
+                <textarea id="opinion" name="opinion" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-enviar">Enviar opinión</button>
+        </form>
+    </section>
+    <br>
+    <!--Ubicacion-->
+    <section class="ubicacion">
+        <h2>Encuéntranos aquí</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.6355274854354!2d-1.508975652052789!3d37.79858050449155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6493525bfabdcd%3A0x9fa41b48765d6b7d!2sLario&#39;s%20Pasteler%C3%ADa!5e0!3m2!1ses!2ses!4v1765442838558!5m2!1ses!2ses"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <br>
+     <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Pastelería Larios. Todos los derechos reservados.</p>
+        </div>
+</body>
+
+</html>

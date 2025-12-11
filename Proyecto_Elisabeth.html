@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pateleria Larios</title>
+    <link rel="stylesheet" href="Proyecto_Elisabeth.css">
+    <link rel="shortcut icon" href="./Fotos-proyecto/inicio.png">
+</head>
+
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <img class="logo-principal" src="./Fotos-proyecto/Logo.png" alt="logo pasteleria">
+            <div class="logo">Pastelería Larios</div>
+            <ul class="nav-links">
+                <li><a href="Proyecto_Elisabeth.html">Inicio</a></li>
+                <li><a href="Productos.html">Productos</a></li>
+                <li><a href="Recetas.html">Recetas</a></li>
+                <li><a href="Eventos.html">Eventos</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Sección de Inicio -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Bienvenido a Pastelería Larios</h1>
+            <p>Deliciosos postres y pasteles artesanales</p>
+        </div>
+    </section>
+    <!-- Sección de Introducción -->
+    <div class="intro">
+        <p>Bienvenido a nuestra pastelería, un espacio donde cada dulce nace con dedicación, creatividad y los mejores
+            ingredientes. Aquí encontrarás una variedad de productos elaborados artesanalmente: desde pasteles clásicos
+            y tartas modernas, hasta pequeños bocados pensados para alegrar cualquier momento del día.</p>
+        <br>
+        <p>Además de nuestra selección diaria, también preparamos creaciones especiales para eventos y celebraciones:
+            cumpleaños, bodas, bautizos, reuniones familiares o corporativas. Diseñamos cada encargo de forma
+            personalizada para que tu ocasión tenga el toque dulce perfecto.</p>
+        <br>
+        <p>Si deseas hacer un pedido, solicitar un presupuesto o simplemente tienes alguna pregunta, visita nuestra
+            página de contacto. Estaremos encantados de atenderte y ayudarte a convertir tus ideas en un postre
+            inolvidable.</p>
+    </div>
+    <br>
+    <br>
+    <!-- Carrusel de Productos Estrellas -->
+    <section class="recetas-intro">
+        <h1 class="section-title">Pasteles con Magia</h1>
+        <div class="recetas-texto">
+            <p class="texto">Déjate cautivar por nuestros productos estrella, una selección de postres irresistibles que
+                combinan técnicas artesanales con un toque moderno. Cada bocado está pensado para enamorar tus sentidos
+                y ofrecerte una experiencia dulce inolvidable. Estos son los favoritos de nuestros clientes… ¡y estamos
+                seguros de que también se convertirán en tus preferidos!</p>
+        </div>
+    </section>
+    <br>
+    <br>
+    <h2>Cada Mordida, un Sueño</h2>
+    <br>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-track">
+                <img src="./Fotos-proyecto/choco.jpg" alt="tarta de chocolate">
+                <img src="./Fotos-proyecto/cumple.jpg" alt="tarta de cumpleaños">
+                <img src="./Fotos-proyecto/mac.jpg" alt="macarons">
+                <img src="./Fotos-proyecto/pistacho.jpg" alt="tarta de pistacho">
+                <img src="./Fotos-proyecto/kinder.png" alt="kinder bueno">
+                <img src="./Fotos-proyecto/mufi.jpg" alt="muffin">
+            </div>
+        </div>
+        <button class="btn inside prev">◀</button>
+        <button class="btn inside next">▶</button>
+    </div>
+    <button class="btn inside prev">◀</button>
+    <button class="btn inside next">▶</button>
+    </div>
+
+
+    <!-- Indicadores -->
+    <div class="indicators">
+        <span data-slide="0" class="active"></span>
+        <span data-slide="1"></span>
+        <span data-slide="2"></span>
+        <span data-slide="3"></span>
+        <span data-slide="4"></span>
+    </div>
+    </div>
+
+
+    <script>
+        const track = document.querySelector('.carousel-track');
+        const images = Array.from(track.children);
+        let index = 0;
+
+
+        function showImage(i) {
+            index = (i + images.length) % images.length;
+            track.style.transform = `translateX(${-index * 600}px)`;
+            document.querySelectorAll('.indicators span').forEach((dot, idx) => {
+                dot.classList.toggle('active', idx === index);
+            });
+        }
+
+
+        document.querySelector('.next').addEventListener('click', () => showImage(index + 1));
+        document.querySelector('.prev').addEventListener('click', () => showImage(index - 1));
+
+
+        document.querySelectorAll('.indicators span').forEach(dot => {
+            dot.addEventListener('click', () => {
+                showImage(parseInt(dot.dataset.slide));
+            });
+        });
+
+
+        setInterval(() => showImage(index + 1), 4000);
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Pastelería Larios. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
